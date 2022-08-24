@@ -40,11 +40,9 @@ LANGUAGES_HINT = f'''snippet language (available languages:
 
 
 # Hint for using the available themes
-THEMES_HINT = (
-    f'''theme (available themes:
+THEMES_HINT = f'''theme (available themes:
 {", ".join(list(THEMES.keys()))})
 '''
-)
 
 
 # Hint for using the available expiry times
