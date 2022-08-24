@@ -107,7 +107,7 @@ def main(args=None):
     with args.file as source_code:
         code_lines = source_code.readlines()
 
-    args.end = args.end if args.end else len(code_lines)
+    args.end = args.end or len(code_lines)
 
     code_lines = code_lines[int(args.start) - 1 : int(args.end)]
 

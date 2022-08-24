@@ -72,7 +72,7 @@ def main():
             relative = relpath(root, templates_path)
             with open(join(base_path, relative, name), "w") as fh:
                 fh.write(jinja.get_template(join(relative, name)).render(tox_environments=tox_environments))
-            print("Wrote {}".format(name))
+            print(f"Wrote {name}")
     print("DONE.")
 
 
